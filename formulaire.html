@@ -43,10 +43,10 @@
 <div id="contact_form_div">
  <p id="contact_label">FORMULAIRE</p>
  <form method="post" action="../essai de formulaire/formulaire.php  ">
-  <p><input type="text" placeholder="Enter votre Nom" required></p>
-  <p><input type="email" placeholder="Enter votre Email"  required></p>
-  <p><input type="text" placeholder="Enter votre Sujet"  required></p>
-  <p><textarea placeholder="Enter votre Message"></textarea>  </p>
+  <p><input type="text" placeholder="Enter votre Nom" required  minlength="2" maxlength="25"></p>
+  <p><input type="email" placeholder="Enter votre Email"  required  minlength="2" maxlength="35"></p>
+  <p><input type="text" placeholder="Enter votre Sujet"  required  minlength="2" maxlength="55"></p>
+  <p><textarea placeholder="Enter votre Message" required  minlength="2" maxlength="200"></textarea>  </p>
   <p><input type="submit" value="Envoyer"  ></p>
  <p> <input type=reset value=Annuler> </p>
  </form>
