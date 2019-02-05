@@ -4,9 +4,10 @@
 img {
 	max-width : 100%;
 	heigth: auto;
-	display: block;
+	display: none;
 	margin-right: auto;
 	margin-left: auto;
+	clip: rect(auto,auto,auto,auto);
 }
 
 
@@ -24,19 +25,28 @@ input:valid {
 
 body
 {
- margin:0 auto;
- padding:0px;
- text-align:center;
- width:100%;
- font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
- background-color:#AED6F1;
+	margin:0 auto;
+	padding:0px;
+	text-align:center;
+	width:100%;
+	font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	background-image: url(fond_bg_body1.jpg);
+	background-repeat: repeat;
 }
+
+#bloc_page
+{
+	width:900px;
+	margin:auto;
+	
+}
+
 #wrapper
 {
  margin:0 auto;
  padding:0px;
  text-align:center;
- width:995px;	
+ width:1500px;	
 }
 #wrapper h1
 {
@@ -55,6 +65,10 @@ body
 	padding:10px;
 	background-color: #DFDFDF;
 }
+#carte p {
+	text-align: center;
+}
+
 #contact_form_div #contact_label
 {
  margin:15px;
@@ -117,9 +131,9 @@ body
 
 img {
 	max-width : 100%;
-heigth: auto;
-display: block;
-}
+	heigth: auto;
+	display: block;
+	}
 
  #wrapper
  {
@@ -189,11 +203,7 @@ display: block;
 {
 
 
-img {
-	max-width : 100%;
-heigth: auto;
-display: block;
-}
+
 
  #wrapper
  {
