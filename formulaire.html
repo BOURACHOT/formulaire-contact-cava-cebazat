@@ -16,42 +16,71 @@
 
 <body>
 
+<div id="bloc_page">   <!--pour permettre de fixer les dimensions de la page -->
+      <header>
+        <h1>Le site du Cava de Cébazat</h1>
+            <p><img src="banniere-cava-010.jpg" alt="banniere" /></p>
+        <h2>Association titulaire de la médaille de la ville de Cébazat (Puy de Dôme)</h2>
+      </header>
 
 
 
 
- <p>
-                
-                Comité d'Animation des Vergers d'Aubeterre (C.A.V.A)<br />
 
-                3 impasse du pont<br />
 
-                63118 CEBAZAT [voir le plan]<br />
 
-                tél : 04 73 25 65 27<br />
 
-                 <a href="mailto:contact@cava-cebazat.fr">Email </a>(avec logiciel de messagerie)<br />
-</p>
+
+    <div id="navigation">
+            <nav >
+                      <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Membres</a></li>
+                        <li><a href="#">Le Cava</a></li>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Reportage</a></li>
+                        <li><a href="#">Prêts</a></li>
+                        <li><a href="#">Bons Plans</a></li>
+                      </ul>
+             </nav>
+     </div>
+ 
+
+                         <p>
+                                        
+                                        Comité d'Animation des Vergers d'Aubeterre (C.A.V.A)<br />
+                        
+                                        3 impasse du pont<br />
+                        
+                                        63118 CEBAZAT [voir le plan]<br />
+                        
+                                        tél : 04 73 25 65 27<br />
+                        
+                                         <a href="mailto:contact@cava-cebazat.fr">Email </a>(avec logiciel de messagerie)<br />
+                        </p>
               
 
 
-<div id="wrapper">
-    <div id="carte">
-       	  <p><img src="carte-local-google-map.jpg" alt="map local" /></p>
+    <div id="wrapper">
+                        <div id="carte">
+                              <p><img src="carte-local-google-map.jpg" alt="map local" /></p>
+                        </div>
+    
+                        <div id="contact_form_div">
+                         <p id="contact_label">FORMULAIRE</p>
+                         <form method="post" action="../essai de formulaire/formulaire.php  ">
+                          <p><input type="text" placeholder="Enter votre Nom" required  minlength="2" maxlength="25"></p>
+                          <p><input type="email" placeholder="Enter votre Email"  required  minlength="2" maxlength="35"></p>
+                          <p><input type="text" placeholder="Enter votre Sujet"  required  minlength="2" maxlength="55"></p>
+                          <p><textarea placeholder="Enter votre Message" required  minlength="2" maxlength="200"></textarea>  </p>
+                          <p><input type="submit" value="Envoyer"  ></p>
+                         <p> <input type=reset value=Annuler> </p>
+                         </form>
+                        </div>
+    
     </div>
 
-<div id="contact_form_div">
- <p id="contact_label">FORMULAIRE</p>
- <form method="post" action="../essai de formulaire/formulaire.php  ">
-  <p><input type="text" placeholder="Enter votre Nom" required  minlength="2" maxlength="25"></p>
-  <p><input type="email" placeholder="Enter votre Email"  required  minlength="2" maxlength="35"></p>
-  <p><input type="text" placeholder="Enter votre Sujet"  required  minlength="2" maxlength="55"></p>
-  <p><textarea placeholder="Enter votre Message" required  minlength="2" maxlength="200"></textarea>  </p>
-  <p><input type="submit" value="Envoyer"  ></p>
- <p> <input type=reset value=Annuler> </p>
- </form>
-</div>
+</div> <!-- fin de pour permettre de fixer les dimensions de la page -->
 
-</div>
 </body>
 </html>
