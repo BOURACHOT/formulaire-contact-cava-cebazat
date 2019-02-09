@@ -12,15 +12,19 @@
 
 
 -->
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
 <div id="bloc_page">   <!--pour permettre de fixer les dimensions de la page -->
       <header>
-        <h1>Le site du Cava de Cébazat</h1>
-            <p><img src="banniere-cava-010.jpg" alt="banniere" /></p>
+       
+            <p  id="banniere"><img src="banniere-cava-010.jpg" alt="banniere" /></p>
         <h2>Association titulaire de la médaille de la ville de Cébazat (Puy de Dôme)</h2>
+        
+        
       </header>
 
 
@@ -31,8 +35,28 @@
 
 
 
-    <div id="navigation">
-            <nav >
+    <div id="navigation_portable"> 
+    
+            <ul id="MenuBar1" class="MenuBarHorizontal">
+                <li><a class="MenuBarItemSubmenu" href="#">Contact</a>
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Membres</a></li>
+                            <li><a href="#">Le Cava</a></li>
+                            <li><a href="#">Presse</a></li>
+                            <li><a href="#">Reportages</a></li>
+                            <li><a href="#">Prêts</a></li>
+                            <li><a href="#">Bons PLans</a></li>
+                        </ul>
+                </li>
+             </ul>
+    
+    </div>
+    <p>  <br />
+  </p>
+    
+    <div id="navigation"> 
+<nav >
                       <ul>
                         <li><a href="#">Accueil</a></li>
                         <li><a href="#">Membres</a></li>
@@ -46,7 +70,8 @@
      </div>
  
 
-                         <p>
+<p><br />
+
                                         
                                         Comité d'Animation des Vergers d'Aubeterre (C.A.V.A)<br />
                         
@@ -82,5 +107,10 @@
 
 </div> <!-- fin de pour permettre de fixer les dimensions de la page -->
 
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
 </body>
 </html>
