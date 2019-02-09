@@ -1,14 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
 
-img {
-	max-width : 100%;
-	heigth: auto;
+
+
+#bloc_page h2 {
+	visibility: hidden;
 	display: none;
+}
+#bloc_page #MenuBar1 {
 	margin-right: auto;
 	margin-left: auto;
-	clip: rect(auto,auto,auto,auto);
 }
+
+#bloc_page #MenuBar1 {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+img {
+	max-width : 100%;
+heigth: auto;
+display: block;
+}
+
+
 
 
 /* possibilité de modifier le css en fonction de la validation du formulaire
@@ -34,19 +50,13 @@ body
 	background-repeat: repeat;
 }
 
-#bloc_page
-{
-	width:900px;
-	margin:auto;
-	
-}
 
 #wrapper
 {
  margin:0 auto;
  padding:0px;
  text-align:center;
- width:1500px;	
+
 }
 #wrapper h1
 {
@@ -163,6 +173,10 @@ img {
   width:80%;
  }
 }
+
+
+
+
 @media only screen and (min-width:400px) and (max-width:699px)
 {
 
@@ -199,8 +213,25 @@ display: block;
   width:80%;
  }
 }
+
+
+
+/* pour mobile 320x480  ;  320x568   ;  375 x 667 */
 @media only screen and (min-width:100px) and (max-width:399px)
 {
+
+#bloc_page #navigation {
+	display: none;
+}
+
+img {
+	max-width : 100%;
+heigth: auto;
+display: block;
+}
+
+
+
 
 
 
@@ -220,10 +251,19 @@ display: block;
   padding-left:0px;
   padding-right:0px;
  }
+ 
+ 
  #contact_form_div input[type="text"]
  {
   width:80%;
  }
+ #contact_form_div input[type="email"]
+ {
+  width:80%;
+ }
+ 
+ 
+ 
  #contact_form_div textarea
  {
   width:80%;
