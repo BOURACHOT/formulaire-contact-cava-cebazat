@@ -1,27 +1,4 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @BOURACHOT Sign out
-0
-0 0 BOURACHOT/formulaire-contact-cava-cebazat
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-responsive 100-399 => contact_form_style.css
-
- master
-@BOURACHOT
-BOURACHOT committed 2 days ago
-1 parent ba9fefe commit cbc5df517834afe552feaa951450bbcea554a4f6
-Showing  with 0 additions and 275 deletions.
-  
-275  contact_form_style.css
-@@ -1,275 +0,0 @@
 @charset "utf-8";
-/* CSS Document */
 
 
 
@@ -42,18 +19,6 @@ img {
 heigth: auto;
 display: block;
 }
-
-
-
-
-/* possibilité de modifier le css en fonction de la validation du formulaire
-input:invalid {
-  border: 2px dashed red;
-}
-input:valid {
-  border: 1px solid black;
-}
-*/
 
 
 body
@@ -236,6 +201,18 @@ display: block;
 /* pour mobile 320x480  ;  320x568   ;  375 x 667 */
 @media only screen and (min-width:100px) and (max-width:399px)
 {
+.g-recaptcha {
+        transform:scale(0.77);
+        -webkit-transform:scale(0.77);
+        transform-origin: 0 20;
+        -webkit-transform-origin:0 20;
+    }
+
+
+
+
+
+
 
 #bloc_page #navigation {
 	display: none;
@@ -297,27 +274,8 @@ display: block;
   width:80%;
  }
 }
-0 comments on commit cbc5df5
-@BOURACHOT
+
    
  
  
  
-Leave a comment
-Attach files by dragging & dropping, selecting them, or pasting from the clipboard.
-
- Styling with Markdown is supported
-  You’re not receiving notifications from this thread.
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
