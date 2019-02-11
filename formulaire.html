@@ -12,6 +12,11 @@
 
 
 -->
+<!--debut script recaptcha -->
+<script src='https://www.google.com/recaptcha/api.js'></script> 
+<!--debut script recaptcha -->
+
+
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 </head>
@@ -93,14 +98,23 @@
     
                         <div id="contact_form_div">
                          <p id="contact_label">FORMULAIRE</p>
-                         <form method="post" action="../essai de formulaire/formulaire.php  ">
+                         <form method="post" action="formulaire.php  ">
                           <p><input type="text" placeholder="Enter votre Nom" required  minlength="2" maxlength="25"></p>
                           <p><input type="email" placeholder="Enter votre Email"  required  minlength="2" maxlength="35"></p>
                           <p><input type="text" placeholder="Enter votre Sujet"  required  minlength="2" maxlength="55"></p>
                           <p><textarea placeholder="Enter votre Message" required  minlength="2" maxlength="200"></textarea>  </p>
-                          <p><input type="submit" value="Envoyer"  ></p>
-                         <p> <input type=reset value=Annuler> </p>
-                         </form>
+                          
+             <!--mise en place du recapcha -->
+                   <div  align="center"   class="g-recaptcha" 
+         			 data-sitekey="6Ld9WI0UAAAAAJ_fVXiAaWYOZf3XIdpLQsshVRCK"       >
+                  </div>
+          	     
+             <!-- fin de mise en place du recapcha -->        
+                          <p>
+                              <input type="submit" value="Envoyer" />
+                          </p>
+                          <p> <input type=reset value=Annuler> </p>
+                        </form>
                         </div>
     
     </div>
